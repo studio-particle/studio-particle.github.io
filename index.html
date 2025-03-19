@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<h1>hello</h1>
-</body>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Virtual Tour</title>
+      <script type="module" crossorigin src="/assets/index-BrsmZSNu.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-CKtuYEjb.css">
+    </head>
+
+    <body>
+        <div id="canvas"></div>
+        <div id="map">
+            <img id="map-image" src="./images/minimap.png" alt="Floorplan">
+            <img id="player-marker" src="images/player-marker.png" alt="Player">
+        </div>
+        
+        <div id="compass-container">
+            <div id="compass">
+                <div id="compass-scale"></div>
+            </div>
+            <div id="compass-arrow">🔻</div>
+        </div>
+        
+        
+        <div id="panel">
+            <button id="start_tour">투어 시작하기</button>
+
+            <div id="floor-menu">
+                <button class="floor-btn" data-floor="3">3F</button>
+                <button class="floor-btn" data-floor="2">2F</button>
+                <button class="floor-btn" data-floor="1">1F</button>
+            </div>
+
+        </div>
+        <button id="start_audio">오디오 시작 G</button>
+        <button id="stop_audio">오디오 멈춤 P</button>
+
+        <div id="crosshair"></div>
+        <div id="modal" class="modal">
+            <div class="modal-content" id="modal-content">
+            </div>
+            <button id="modal-close">닫기</button>
+        </div>
+
+    </body>
+
 </html>
